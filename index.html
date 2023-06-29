@@ -6,31 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="css/Landingpage.css">
 </head>
 
 <body>
-  <div class="navbar">
-    <div class="container">
-      <a class="logo" href="#">XCHANGE</a>
-      <ul class="bar">
-        <li class="NFT">
-          <a href="#">領取NFT</a>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand logo" href="#">XCHANGE</a>
+    <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon3"><span></span><span></span><span></span></div>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav bar">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">領取 NFT</a>
         </li>
-        <li class="Acitivity_text">
-          <a href="#activity_id">活動紀錄</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#activity_id">活動紀錄</a>
         </li>
-        <li class="introduction">
-          <a href="#groupintro_id">各組介紹</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#groupintro_id">各組介紹</a>
         </li>
-        <li class="Team">
-          <a href="#group_id">製作團隊</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#group_id">製作團隊</a>
         </li>
       </ul>
     </div>
-  </div>
+  </nav>
   <div class="all_picture">
     <img class="picture" src="images/表頭大合照.JPG" alt="表頭大合照">
     <div class="表頭文字">
@@ -92,100 +96,102 @@
     </div>
   </div>
   <div class="triango"></div>
-
-  <div class="container">
-    <h2 class="各組介紹文字" id="groupintro_id">各組介紹</h2>
-    <ul class="row group_introduction_picture">
-      <li class="col-12 col-sm-12 col-lg-6">
-        <div class="group_style MKT">
-          <img src="images/MKT.png" alt="MKT">
-          <p>透過多元行銷課程，學習全方位行銷知識，亦透過專案將知識學以致用，在畢業前即有實戰經驗。</p>
-        </div>
-      </li>
-      <li class="col-12 col-sm-12 col-lg-6">
-        <div class="group_style BD">
-          <img src="images/BD.png" alt="BD">
-          <p></p>
-        </div>
-      </li>
-      <li class="col-12 col-sm-12 col-lg-6">
-        <div class="group_style PM">
-          <img src="images/PM.png" alt="PM">
-          <p></p>
-        </div>
-      </li>
-      <li class="col-12 col-sm-12 col-lg-6">
-        <div class="group_style UIUX">
-          <img src="images/UIUX.png" alt="UIUX">
-          <p></p>
-        </div>
-      </li>
-      <li class="col-12 col-sm-12 col-lg-6">
-        <div class="group_style Data">
-          <img src="images/Data.png" alt="Data">
-          <p>課程包括數據人才職涯規劃、資料工程師開發流程介紹、數據策略制定及數據解讀能力，並搭配網路公開資料集實作電商推薦系統。</p>
-        </div>
-      </li>
-      <li class="col-12 col-sm-12 col-lg-6">
-        <div class="group_style CSR">
-          <img src="images/CSR.png" alt="CSR">
-          <p></p>
-        </div>
-      </li>
-      <li class="col-12 col-sm-12 col-lg-12">
-        <div class="group_style Web3">
-          <img src="images/Web3.png" alt="Web3">
-          <p>學習內容涵蓋 Web3 技術的核心領域，包括區塊鏈、智能合約以及去中心化應用。</p>
-        </div>
-      </li>
-    </ul>
-  </div>
+  <div class="group_intro">
+    <div class="container">
+      <h2 class="各組介紹文字" id="groupintro_id">各組介紹</h2>
+      <ul class="row group_introduction_picture">
+        <li class="col-12 col-sm-12 col-lg-6">
+          <div class="group_style MKT">
+            <img src="images/MKT.png" alt="MKT">
+            <p>透過多元行銷課程，學習全方位行銷知識，亦透過專案將知識學以致用，在畢業前即有實戰經驗。</p>
+          </div>
+        </li>
+        <li class="col-12 col-sm-12 col-lg-6">
+          <div class="group_style BD">
+            <img src="images/BD.png" alt="BD">
+            <p></p>
+          </div>
+        </li>
+        <li class="col-12 col-sm-12 col-lg-6">
+          <div class="group_style PM">
+            <img src="images/PM.png" alt="PM">
+            <p></p>
+          </div>
+        </li>
+        <li class="col-12 col-sm-12 col-lg-6">
+          <div class="group_style UIUX">
+            <img src="images/UIUX.png" alt="UIUX">
+            <p></p>
+          </div>
+        </li>
+        <li class="col-12 col-sm-12 col-lg-6">
+          <div class="group_style Data">
+            <img src="images/Data.png" alt="Data">
+            <p>課程包括數據人才職涯規劃、資料工程師開發流程介紹、數據策略制定及數據解讀能力，並搭配網路公開資料集實作電商推薦系統。</p>
+          </div>
+        </li>
+        <li class="col-12 col-sm-12 col-lg-6">
+          <div class="group_style CSR">
+            <img src="images/CSR.png" alt="CSR">
+            <p></p>
+          </div>
+        </li>
+        <li class="col-12 col-sm-12 col-lg-12">
+          <div class="group_style Web3">
+            <img src="images/Web3.png" alt="Web3">
+            <p>學習內容涵蓋 Web3 技術的核心領域，包括區塊鏈、智能合約以及去中心化應用。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="team">
     <div class="container">
-      <div class="製作團隊文字">
-        <h2 id="group_id">製作團隊</h2>
-      </div>
+      <h2 class="製作團隊文字" id="group_id">製作團隊</h2>
       <ul class="row">
         <li class="col-6 col-sm-6 col-md-3 text-center">
-          <img class="mx-auto" src="images/加加.png" alt="加加">
+          <img src="images/加加.png" alt="加加">
           <p>洪嘉翎</p>
         </li>
         <li class="col-6 col-sm-6 col-md-3 text-center">
-          <img class="mx-auto" src="images/文謙.png" alt="文謙">
+          <img src="images/文謙.png" alt="文謙">
           <p>唐文謙</p>
         </li>
         <li class="col-6 col-sm-6 col-md-3 text-center">
-          <img class="mx-auto" src="images/泳銓.png" alt="泳銓">
+          <img src="images/泳銓.png" alt="泳銓">
           <p>蘇泳銓</p>
         </li>
         <li class="col-6 col-sm-6 col-md-3 text-center">
-          <img class="mx-auto" src="images/宜學.png" alt="宜學">
+          <img src="images/宜學.png" alt="宜學">
           <p>呂宜學</p>
         </li>
         <li class="col-6 col-sm-6 col-md-3 text-center">
-          <img class="mx-auto" src="images/思樺.png" alt="思樺">
+          <img src="images/思樺.png" alt="思樺">
           <p>陳思樺</p>
         </li>
         <li class="col-6 col-sm-6 col-md-3 text-center">
-          <img class="mx-auto" src="images/渝珊.png" alt="渝珊">
+          <img src="images/渝珊.png" alt="渝珊">
           <p>林渝珊</p>
         </li>
         <li class="col-6 col-sm-6 col-md-3 text-center">
-          <img class="mx-auto" src="images/可婷.png" alt="可婷">
+          <img src="images/可婷.png" alt="可婷">
           <p>林可婷</p>
         </li>
         <li class="col-6 col-sm-6 col-md-3 text-center">
-          <img class="mx-auto" src="images/子瑜.png" alt="子瑜">
+          <img src="images/子瑜.png" alt="子瑜">
           <p>劉子瑜</p>
         </li>
       </ul>
     </div>
   </div>
   <p class="footer">Copyright © 2023 XChange 互聯網大學 6th Team Web3. All rights reserved.</p>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
