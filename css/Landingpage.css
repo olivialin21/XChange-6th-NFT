@@ -1,0 +1,471 @@
+/* 先套用 CSS Reset 消除預設樣式 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 自訂樣式 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+/* navbar的程式碼 */
+.navbar {
+  background-color: #094697;
+  position: fixed;
+  /* top:0;相對於網頁頂端的距離 */
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFFFFF;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  color: #D5E5FE;
+}
+
+.bar {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.bar a {
+  padding: 12px;
+  color: #faf7f7;
+  position: relative;
+}
+
+.bar a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  width: 0;
+  height: 2px;
+  background-color: #faf7f7;
+  transition: all 0.3s;
+}
+
+.bar a:hover::after {
+  width: calc(100% - 24px);
+}
+
+/*表頭大合照*/
+.all_picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 600px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.all_picture::after {
+  display: block;
+  z-index: 1;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #EAF2FF;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+}
+
+.picture {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.5);
+  -webkit-filter: brightness(0.5);
+}
+
+.表頭文字 h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.表頭文字 p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.領取NFT {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 12px 24px;
+  background-color: #094697;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+
+.領取NFT:hover {
+  background-color: #2F80ED;
+}
+
+/*活動紀錄*/
+.Activity {
+  background-color: #EAF2FF;
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+
+.活動紀錄文字 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #000
+}
+
+.Activity_block {
+  position: relative;
+}
+
+.Activity_block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  border-right: 2px solid #094697;
+  height: calc(100% - 44px);
+  display: block;
+}
+
+.Activity_block li {
+  margin-bottom: 58px;
+}
+
+.Activity_block h3{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-top: -8px;
+}
+
+.activity_reverse {
+  flex-direction: row-reverse;
+}
+
+.activity_reverse .date {
+  text-align: left;
+}
+
+.activity_reverse .date p::before {
+  left: -21px;
+}
+
+.activity_reverse .info {
+  text-align: right;
+}
+
+.date {
+  text-align: right;
+}
+
+.date p {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 8px;
+  margin-top: -8px;
+  color: #094697;
+  position: relative;
+  display: inline-block;
+}
+
+.date p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -19px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: #094697;
+}
+
+.Activity_block .image{
+  position: relative;
+  max-width: 500px;
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.Activity_block img{
+  position: relative;
+  z-index: 2;
+}
+
+.Activity_block .image::before {
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 10px;
+  top: 10px;
+  background-color: #094697;
+}
+
+.activity_reverse .image{
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.triango {
+  width: 100%;
+  height: 50px;
+  background-color: #EAF2FF;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+}
+
+/*各組介紹*/
+
+.各組介紹文字 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: #060606
+}
+
+.group_style{
+  max-width: 600px;
+  padding: 12px;
+  border: 1px solid #094697;
+  position: relative;
+}
+.group_style::before{
+  content: "MKT";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+/*footer的程式碼*/
+.bottom {
+  padding: 20px 0;
+  background-color: #094697;
+  margin-top: 20px;
+}
+
+.製作團隊文字 h2 {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  margin-bottom: 50px;
+  color: #f9f7f7
+}
+
+.製作團隊照片1 {
+  display: flex;
+  justify-content: center;
+}
+
+.製作團隊照片2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+.bottom p {
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 30px;
+  color: #FFFFFF;
+
+}
