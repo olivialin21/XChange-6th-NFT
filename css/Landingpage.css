@@ -602,7 +602,7 @@ a {
   margin-top: 16px;
 }
 
-.team img{
+.team img {
   margin: 0 auto;
 }
 
@@ -616,6 +616,7 @@ a {
 
 @media(max-width: 992px) {
   .Activity_block::after {
+    top: 3px;
     left: 0%;
     height: calc(100% - 56px);
   }
@@ -649,6 +650,7 @@ a {
   }
 
   .date p::before {
+    top: 3px;
     left: -21px;
     right: 0;
     transform: translate(-50%, 0);
@@ -735,21 +737,22 @@ a {
     top: 5px;
   }
 
-  .date p::before{
+  .date p::before {
+    top: 4px;
     width: 12px;
     height: 12px;
   }
 
-  .各組介紹文字{
+  .各組介紹文字 {
     margin-bottom: 20px;
   }
 
-  .製作團隊文字{
+  .製作團隊文字 {
     font-size: 24px;
     margin-bottom: 20px;
   }
 
-  .group_style{
+  .group_style {
     margin-bottom: 30px;
     font-size: 14px;
   }
@@ -758,21 +761,24 @@ a {
     font-size: 24px;
   }
 
-  .team{
+  .team {
     padding: 30px 12px 10px;
   }
-  .team img{
+
+  .team img {
     width: 100px;
     height: 100px;
   }
 
-  .team p{
+  .team p {
     margin-top: 8px;
   }
-  .team li{
+
+  .team li {
     margin-bottom: 20px;
   }
-  .footer{
+
+  .footer {
     font-size: 12px;
     padding: 12px;
   }
